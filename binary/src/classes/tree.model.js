@@ -1,4 +1,4 @@
-import NodeModel from "../components/tree.component";
+import NodeModel from "./node.model";
 
 class TreeModel {
     constructor() {
@@ -12,7 +12,7 @@ class TreeModel {
         
 
         // new node using node model of the key and the value 
-        const newNode = NodeModel(key, value);
+        const newNode = new NodeModel(key, value);
 
         // if the tree is empty, set the new node at the root node
         if (this.root === null) {

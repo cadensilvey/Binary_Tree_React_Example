@@ -1,0 +1,177 @@
+/* This is the CSS for the tree.component */
+
+/* Center the container */
+.container {
+    margin: 0 auto;
+}
+
+/* Center the empty tree message */
+#emptyTreeMsg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style for each node in the tree */
+.node {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;  /* Fixed width */
+    height: 4rem; /* Fixed height */
+    text-align: center;
+    border: 2px solid #5774d5;  /* Border color */
+    border-radius: 50%;  /* Make the node circular */
+    font-size: 10px;  /* Small font size */
+}
+
+/* Style for h3 elements inside the nodes */
+.node h3 {
+    margin: 0.5em auto;  /* Center the text with margin */
+    color: #292929;  /* Text color */
+}
+
+/* Style for each subtree */
+.subtree {
+    width: 1%;  /* Minimal width */
+    display: flex;
+    flex-direction: column;  /* Stack children vertically */
+    align-items: center;  /* Center children horizontally */
+}
+
+/* Style for the children of a subtree */
+.subtree > .children {
+    display: flex;  /* Display children in a row */
+    justify-content: space-between;  /* Distribute space evenly between children */
+}
+
+/* Align the left children to the start */
+.left {
+    justify-content: flex-start !important;
+}
+
+/* Align the right children to the end */
+.right {
+    justify-content: flex-end !important;
+}
+
+/* Style for the main tree container */
+.tree {
+    width: 50%;  /* 50% width of its container */
+    margin-top: 1em;  /* Margin on top */
+    display: flex;  /* Flex container */
+    justify-content: flex-end;  /* Align content to the right */
+}
+
+/* Style for visited nodes */
+.visited {
+    background-color: #3eb5c6;  /* Background color */
+}
+
+/* Style for input elements */
+input {
+    border: 1px solid #3eb5c6;  /* Border color */
+    color: #292929;  /* Text color */
+    font-weight: 500;  /* Text weight */
+    margin: 1em;  /* Margin around input */
+    text-align: center;  /* Center the text */
+    border-radius: 3em;  /* Rounded corners */
+    font-size: medium;  /* Medium font size */
+    padding: 0.9em;  /* Padding inside input */
+}
+
+/* Style for the navigation bar */
+.navbar {
+    display: flex;  /* Flex container */
+    justify-content: center;  /* Center content */
+    border-bottom: 2px solid teal;  /* Bottom border */
+    background-color: rgb(120, 160, 160);  /* Background color */
+    border-bottom: 0.5em solid #005353;  /* Thicker bottom border */
+    padding-bottom: 0.7em;  /* Padding at the bottom */
+}
+
+/* Style for button elements */
+button {
+    background-color: #005353;  /* Background color */
+    font-family: 'Montserrat', sans-serif;  /* Font family */
+    padding: 1em;  /* Padding inside button */
+    color: white;  /* Text color */
+    width: 16em;  /* Fixed width */
+    border-radius: 3em;  /* Rounded corners */
+    border: 0.1em solid teal;  /* Border color */
+    margin: 0 1em;  /* Margin on sides */
+    transition: background-color 0.2s, border 0.2s;  /* Transition for background and border */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    border: 0.1em solid white;  /* Change border color on hover */
+    background-color: rgb(77, 128, 0);  /* Change background color on hover */
+}
+
+/* Cursor pointer for input and button on hover */
+input:hover,
+button:hover {
+    cursor: pointer;
+}
+
+/* Remove outline on button focus */
+button:focus {
+    outline: none !important;
+}
+
+/* Remove outline on input focus */
+input:focus {
+    outline: none !important;
+}
+
+/* Style for the logo bar */
+.logo-bar {
+    padding: 2em 2em 0.5em;  /* Padding around */
+    display: flex;  /* Flex container */
+    justify-content: center;  /* Center content */
+    background-color: rgb(24, 19, 58);  /* Background color */
+}
+
+/* Style for the title */
+#title {
+    color: white;  /* Text color */
+    font-size: 3em;  /* Large font size */
+}
+
+/* Style for the logo */
+.logo {
+    margin: 0 3em;  /* Margin on sides */
+}
+
+/* Style for the main actions container */
+.main-actions {
+    background-color: teal;  /* Background color */
+    display: flex;  /* Flex container */
+    justify-content: center;  /* Center content */
+    align-items: center;  /* Center items vertically */
+}
+
+/* Style for buttons inside main-actions */
+.main-actions button {
+    width: 9em;  /* Fixed width */
+}
+
+/* Hover effect for add button */
+#add:hover {
+    color: #d9ff7d;  /* Text color on hover */
+    border-color: #d9ff7d;  /* Border color on hover */
+}
+
+/* Hover effect for remove button */
+#remove:hover {
+    color: #ff6d6d;  /* Text color on hover */
+    border-color: #ff6d6d;  /* Border color on hover */
+}
+
+/* Hover effect for find button */
+#find:hover {
+    color: #f3d83f;  /* Text color on hover */
+    border-color: #f3d83f;  /* Border color on hover */
+}
