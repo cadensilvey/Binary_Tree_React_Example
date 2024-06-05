@@ -1,4 +1,4 @@
-import NodeModel from "./components/tree.component";
+import NodeModel from "../components/tree.component";
 
 class TreeModel {
     constructor() {
